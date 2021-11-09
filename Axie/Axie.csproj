@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2710FFED-145D-45E9-A29B-EFE6EA3D18EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Axie</RootNamespace>
+    <AssemblyName>Axie</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Cartas.cs" />
+    <Compile Include="Enumerador\Tipo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Aquatic\ANEMONE..png" />
+    <Content Include="Resources\Aquatic\ANEMONE.png" />
+    <Content Include="Resources\Aquatic\BABYLONIA.png" />
+    <Content Include="Resources\Aquatic\BLUE MOON.png" />
+    <Content Include="Resources\Aquatic\CATFISH.png" />
+    <Content Include="Resources\Aquatic\CLAMSHELL.png" />
+    <Content Include="Resources\Aquatic\GOLDFISH.png" />
+    <Content Include="Resources\Aquatic\HERMIT.png" />
+    <Content Include="Resources\Aquatic\KOI.png" />
+    <Content Include="Resources\Aquatic\LAM.png" />
+    <Content Include="Resources\Aquatic\NAVAGA.png" />
+    <Content Include="Resources\Aquatic\NIMO.png" />
+    <Content Include="Resources\Aquatic\ORANDA.png" />
+    <Content Include="Resources\Aquatic\PERCH.png" />
+    <Content Include="Resources\Aquatic\PIRANHA.png" />
+    <Content Include="Resources\Aquatic\RANCHU.png" />
+    <Content Include="Resources\Aquatic\RISKY FISH.png" />
+    <Content Include="Resources\Aquatic\SHOAL STAR.png" />
+    <Content Include="Resources\Aquatic\SHRIMP.png" />
+    <Content Include="Resources\Aquatic\SPONGE.png" />
+    <Content Include="Resources\Aquatic\TADPOLE.png" />
+    <Content Include="Resources\Aquatic\TEAL SHELL.png" />
+    <Content Include="Resources\Besta\ARCO.png" />
+    <Content Include="Resources\Besta\AXIE KISS.png" />
+    <Content Include="Resources\Besta\CONFIDENT.png" />
+    <Content Include="Resources\Besta\COTTONTAIL.png" />
+    <Content Include="Resources\Besta\DUAL BLADE.png" />
+    <Content Include="Resources\Besta\FURBALL.png" />
+    <Content Include="Resources\Besta\GERBIL.png" />
+    <Content Include="Resources\Besta\GODA.png" />
+    <Content Include="Resources\Besta\HARE.png" />
+    <Content Include="Resources\Besta\HERO.png" />
+    <Content Include="Resources\Besta\IMP.png" />
+    <Content Include="Resources\Besta\JAGUAR.png" />
+    <Content Include="Resources\Besta\LITTLE BRANCH.png" />
+    <Content Include="Resources\Besta\MERRY.png" />
+    <Content Include="Resources\Besta\NUT CRACKER..png" />
+    <Content Include="Resources\Besta\NUT CRACKER.png" />
+    <Content Include="Resources\Besta\POCKY.png" />
+    <Content Include="Resources\Besta\RICE.png" />
+    <Content Include="Resources\Besta\RISKY BEAST.png" />
+    <Content Include="Resources\Besta\RONIN.png" />
+    <Content Include="Resources\Besta\SHIBA.png" />
+    <Content Include="Resources\Besta\TIMBER.png" />
+    <Content Include="Resources\Bird\BALLOON.png" />
+    <Content Include="Resources\Bird\CLOUD.png" />
+    <Content Include="Resources\Bird\CUCKOO.png" />
+    <Content Include="Resources\Bird\CUPID.png" />
+    <Content Include="Resources\Bird\DOUBLETALK.png" />
+    <Content Include="Resources\Bird\EGGSHELL.png" />
+    <Content Include="Resources\Bird\FEATHER FAN.png" />
+    <Content Include="Resources\Bird\FEATHER SPEAR.png" />
+    <Content Include="Resources\Bird\GRANMA_S FAN.png" />
+    <Content Include="Resources\Bird\HUNGRY BIRD.png" />
+    <Content Include="Resources\Bird\KESTREL.png" />
+    <Content Include="Resources\Bird\KINGFISHER.png" />
+    <Content Include="Resources\Bird\LITTLE OWL.png" />
+    <Content Include="Resources\Bird\PEACE MAKER.png" />
+    <Content Include="Resources\Bird\PIGEON POST.png" />
+    <Content Include="Resources\Bird\POST FIGHT.png" />
+    <Content Include="Resources\Bird\RAVEN.png" />
+    <Content Include="Resources\Bird\SWALLOW.png" />
+    <Content Include="Resources\Bird\THE LAST ONE.png" />
+    <Content Include="Resources\Bird\TRI FEATHER.png" />
+    <Content Include="Resources\Bird\TRUMP.png" />
+    <Content Include="Resources\Bird\WING HORN.png" />
+    <Content Include="Resources\Bug\ANT.png" />
+    <Content Include="Resources\Bug\ANTENNA.png" />
+    <Content Include="Resources\Bug\BUZZ BUZZ.png" />
+    <Content Include="Resources\Bug\CATERPILLARS.png" />
+    <Content Include="Resources\Bug\CUTE BUNNY.png" />
+    <Content Include="Resources\Bug\FISH SNACK.png" />
+    <Content Include="Resources\Bug\GARISH WORM.png" />
+    <Content Include="Resources\Bug\GRAVEL ANT.png" />
+    <Content Include="Resources\Bug\LAGGIN.png" />
+    <Content Include="Resources\Bug\LEAF BUG.png" />
+    <Content Include="Resources\Bug\MOSQUITO.png" />
+    <Content Include="Resources\Bug\PARASITE.png" />
+    <Content Include="Resources\Bug\PINCER.png" />
+    <Content Include="Resources\Bug\PLIERS.png" />
+    <Content Include="Resources\Bug\PUPAE.png" />
+    <Content Include="Resources\Bug\SANDAL.png" />
+    <Content Include="Resources\Bug\SCARAB.png" />
+    <Content Include="Resources\Bug\SNAIL SHELL.png" />
+    <Content Include="Resources\Bug\SPIKY WING.png" />
+    <Content Include="Resources\Bug\SQUARE TEETH.png" />
+    <Content Include="Resources\Bug\THORNY CATTEPILAR.png" />
+    <Content Include="Resources\Bug\TWIN TAIL.png" />
+    <Content Include="Resources\Planta\BAMBOO SHOOT.png" />
+    <Content Include="Resources\Planta\BEECH.png" />
+    <Content Include="Resources\Planta\BIDENS.png" />
+    <Content Include="Resources\Planta\CACTUS.png" />
+    <Content Include="Resources\Planta\CARROT.png" />
+    <Content Include="Resources\Planta\CATTAIL.png" />
+    <Content Include="Resources\Planta\HATSUNE.png" />
+    <Content Include="Resources\Planta\HERBIVORE.png" />
+    <Content Include="Resources\Planta\HOT BUTT.png" />
+    <Content Include="Resources\Planta\MINT.png" />
+    <Content Include="Resources\Planta\POTATO LEAF.png" />
+    <Content Include="Resources\Planta\PUMPKIN.png" />
+    <Content Include="Resources\Planta\ROSE BUD.png" />
+    <Content Include="Resources\Planta\SERIOUS.png" />
+    <Content Include="Resources\Planta\SHIITAKE.png" />
+    <Content Include="Resources\Planta\SILENCE WHISPER.png" />
+    <Content Include="Resources\Planta\STRAWBERRY SHORTCAKE.png" />
+    <Content Include="Resources\Planta\TURNIP.png" />
+    <Content Include="Resources\Planta\WATERING CAN.png" />
+    <Content Include="Resources\Planta\WATERMELON.png" />
+    <Content Include="Resources\Planta\YAM.png" />
+    <Content Include="Resources\Planta\ZIGZAG.png" />
+    <Content Include="Resources\Reptil\BONE SAIL.png" />
+    <Content Include="Resources\Reptil\BUMPY.png" />
+    <Content Include="Resources\Reptil\CERASTES.png" />
+    <Content Include="Resources\Reptil\CROC.png" />
+    <Content Include="Resources\Reptil\GILA.png" />
+    <Content Include="Resources\Reptil\GRASS SNAKE.png" />
+    <Content Include="Resources\Reptil\GREEN THORNS.png" />
+    <Content Include="Resources\Reptil\IGUANA.png" />
+    <Content Include="Resources\Reptil\INCISOR.png" />
+    <Content Include="Resources\Reptil\INDIAN STAR.png" />
+    <Content Include="Resources\Reptil\KOTARO.png" />
+    <Content Include="Resources\Reptil\RAZOR BITE.png" />
+    <Content Include="Resources\Reptil\RED EAR.png" />
+    <Content Include="Resources\Reptil\SCALY SPEAR.png" />
+    <Content Include="Resources\Reptil\SCALY SPOON.png" />
+    <Content Include="Resources\Reptil\SNAKE JAR.png" />
+    <Content Include="Resources\Reptil\TINY DINO.png" />
+    <Content Include="Resources\Reptil\TINY TURTLE.png" />
+    <Content Include="Resources\Reptil\TOOTHLESS BITE.png" />
+    <Content Include="Resources\Reptil\TRI SPIKES.png" />
+    <Content Include="Resources\Reptil\UNKO.png" />
+    <Content Include="Resources\Reptil\WALL GECKO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
